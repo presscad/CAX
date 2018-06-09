@@ -125,6 +125,7 @@
     <ClCompile Include="Line2d.cpp" />
     <ClCompile Include="LwPolyline2d.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Mat4.cpp" />
     <ClCompile Include="MathTools.cpp" />
     <ClCompile Include="Point2d.cpp" />
     <ClCompile Include="Polyline2d.cpp" />
@@ -142,6 +143,7 @@
     <ClInclude Include="InstancePool.h" />
     <ClInclude Include="Line2d.h" />
     <ClInclude Include="LwPolyline2d.h" />
+    <ClInclude Include="Mat4.h" />
     <ClInclude Include="MathTools.h" />
     <ClInclude Include="MultiInstancePool.h" />
     <ClInclude Include="Point2d.h" />

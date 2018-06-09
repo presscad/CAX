@@ -60,6 +60,9 @@
     <ClCompile Include="BoundingBox2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Mat4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constants.h">
@@ -111,6 +114,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="BoundingBox2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Mat4.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
