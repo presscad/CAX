@@ -115,7 +115,40 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Arc2d.cpp" />
+    <ClCompile Include="BoundingBox2.cpp" />
+    <ClCompile Include="Circle2d.cpp" />
+    <ClCompile Include="Constants.cpp" />
+    <ClCompile Include="CurveEntity.cpp" />
+    <ClCompile Include="Entity2d.cpp" />
+    <ClCompile Include="Entity3d.cpp" />
+    <ClCompile Include="Line2d.cpp" />
+    <ClCompile Include="LwPolyline2d.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MathTools.cpp" />
+    <ClCompile Include="Point2d.cpp" />
+    <ClCompile Include="Polyline2d.cpp" />
+    <ClCompile Include="Vec2.cpp" />
+    <ClCompile Include="Vec3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arc2d.h" />
+    <ClInclude Include="BoundingBox2d.h" />
+    <ClInclude Include="Circle2d.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="CurveEntity.h" />
+    <ClInclude Include="Entity2d.h" />
+    <ClInclude Include="Entity3d.h" />
+    <ClInclude Include="InstancePool.h" />
+    <ClInclude Include="Line2d.h" />
+    <ClInclude Include="LwPolyline2d.h" />
+    <ClInclude Include="MathTools.h" />
+    <ClInclude Include="MultiInstancePool.h" />
+    <ClInclude Include="Point2d.h" />
+    <ClInclude Include="Polyline2d.h" />
+    <ClInclude Include="TypeTools.h" />
+    <ClInclude Include="Vec2.h" />
+    <ClInclude Include="Vec3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,5 +18,100 @@
     <ClCompile Include="Main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Constants.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vec2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vec3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CurveEntity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity3d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Point2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Line2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Polyline2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LwPolyline2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Arc2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MathTools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Constants.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InstancePool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiInstancePool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeTools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CurveEntity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity3d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Point2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Line2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Polyline2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LwPolyline2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Arc2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MathTools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingBox2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
