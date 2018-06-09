@@ -26,7 +26,10 @@ int main(void)
 	//system("pause");
 
 	CAX::Mat4d mat(4.0, 1.0, 2.0, 2.2, 1.1, 2.3, 3.2, 1.2, 0.5, 3.2, 3.5, 1.5, 2.6, 2.2, 2.5, 1.9);
-	printf("\n%lf\n", mat.determinant());
+	//printf("\n%lf\n", mat.determinant());
+
+	mat.transpose();
+
 	system("pause");
 
 	return 0;

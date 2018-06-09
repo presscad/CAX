@@ -36,8 +36,23 @@ namespace CAX
 		inline const T* operator [] (unsigned short index) const;
 
 
+		/* {{ 获取 }} */
 		/* 计算行列式的值 */
 		T determinant(void) const;
+
+		
+		/* {{ 修改 }} */
+		/* 转置 */
+		void transpose(void);
+
+
+		/* 获取矩阵和设置矩阵 */
+		void getMatrix(T matrix[16]) const;
+		void setMatrix(const T matrix[16]);
+
+		/* 获取和设置OpenGL形式的矩阵 */
+		void getGLMatrix(T matrix[16]) const;
+		void setGLMatrix(const T matrix[16]);
 
 	}; // class Mat4
 

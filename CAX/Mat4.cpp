@@ -2,11 +2,11 @@
 
 
 #include <cstring>
-
+#include <algorithm>
 
 namespace CAX
 {
-	
+
 	template<typename T>
 	Mat4<T>::Mat4()
 	{
@@ -147,7 +147,67 @@ namespace CAX
 	}
 
 
+	template<typename T>
+	void Mat4<T>::transpose(void)
+	{
+		std::swap(mat[0][1], mat[1][0]);
+		std::swap(mat[0][2], mat[2][0]);
+		std::swap(mat[0][3], mat[3][0]);
+		std::swap(mat[1][2], mat[2][1]);
+		std::swap(mat[1][3], mat[3][1]);
+		std::swap(mat[2][3], mat[3][2]);
+	}
 
+
+	template<typename T>
+	void Mat4<T>::getMatrix(T matrix[16]) const
+	{
+		for(int i=0; i<4; i++)
+		{
+			for(int j=0; j<4; j++)
+			{
+				matrix[4 * i + j] = mat[i][j];
+			}
+		}
+	}
+
+	template<typename T>
+	void Mat4<T>::setMatrix(const T matrix[16])
+	{
+		for (int i = 0; i<4; i++)
+		{
+			for (int j = 0; j<4; j++)
+			{
+				mat[i][j] = matrix[4 * i + j];
+			}
+		}
+	}
+
+
+
+	template<typename T>
+	void Mat4<T>::getGLMatrix(T matrix[16]) const
+	{
+		for (int i=0; i<4; i++)
+		{
+			for (int j=0; j<4; j++)
+			{
+				matrix[i + 4 * j] = mat[i][j];
+			}
+		}
+	}
+
+	template<typename T>
+	void Mat4<T>::setGLMatrix(const T matrix[16])
+	{
+		for (int i=0; i<4; i++)
+		{
+			for (int j=0; j<4; j++)
+			{
+				 mat[i][j] = matrix[i + 4 * j];
+			}
+		}
+	}
 
 
 
