@@ -28,12 +28,40 @@ namespace CAX
 	}
 
 	template<typename T>
+	T cycleClamp(const T value, const T lower, const T upper)
+	{
+		if(lower >= upper)
+		{
+			return value;
+		}
+
+		T cycle = upper - lower;
+		T clampValue = value;
+
+		while(clampValue < lower)
+		{
+			clampValue += cycle;
+		}
+
+		while(clampValue > upper)
+		{
+			clampValue -= cycle;
+		}
+
+		return clampValue;
+	}
+
+	template<typename T>
 	bool equals(const T value1, const T value2)
 	{
 		return std::abs(value1 - value2) < Constants<T>::EPSILON;
 	}
 
-
+	template<typename T>
+	bool inRange(const T value, const T fmin, const T fmax)
+	{
+		return (value >= fmin) && (value <= fmax);
+	}
 
 
 
@@ -41,11 +69,11 @@ namespace CAX
 	{
 		unsigned short value = 0xFFFF;
 
-		for (int i = 0; i<nBytes; i++)
+		for (unsigned int i = 0; i<nBytes; i++)
 		{
 			value ^= data[i];
 			unsigned short exor = value & 0x0001;
-			for (int j = 0; j<8; j++)
+			for (unsigned int j = 0; j<8; j++)
 			{
 				value = value >> 1;
 				if (exor)
@@ -70,6 +98,12 @@ namespace CAX
 	template float clamp<float>(const float value, const float lower, const float upper);
 	template double clamp<double>(const double value, const double lower, const double upper);
 
+	template float cycleClamp<float>(const float value, const float lower, const float upper);
+	template double cycleClamp<double>(const double value, const double lower, const double upper);
+
 	template bool equals<float>(const float value1, const float value2);
 	template bool equals<double>(const double value1, const double value2);
+
+	template bool inRange<float>(const float value, const float fmin, const float fmax);
+	template bool inRange<double>(const double value, const double fmin, const double fmax);
 }

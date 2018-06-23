@@ -19,15 +19,27 @@ namespace CAX
 		LwPolyline2d();
 		~LwPolyline2d();
 
-		/* @override 判断是否封闭 */
-		bool isClosed(void);
+		// {{ @override }}
+		/* 返回二维图形的类型 */
+		virtual Type type(void) const;
+		// 判断是否封闭 
+		bool isClosed(void) const;
+		// 获取起点和终点 
+		Vec2d head(void) const;
+		Vec2d tail(void) const;
+		// 获取包围盒
+		virtual BoundingBox2d boundingBox2d(void) const;
+		virtual BoundingBox3d boundingBox3d(void) const;
+		// 反向
+		virtual void reverse(void);
+		// 获取长度
+		virtual double length(void) const;
 
-		/* @override 获取起点和终点 */
-		Vec2d head(void);
-		Vec2d tail(void);
+		// {{ 获取属性 }}
+		std::list<Entity2d*>& segments(void);
 
 	private:
-		/* 直线和圆弧的集合 */
+		// 直线和圆弧的集合
 		std::list<Entity2d*> m_segments;
 		
 

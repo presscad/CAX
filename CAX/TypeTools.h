@@ -4,6 +4,8 @@
 #ifndef _TYPETOOLS_H_
 #define _TYPETOOLS_H_
 
+#include <cstddef>
+
 namespace CAX
 {
 	/* 基类型 */
@@ -15,15 +17,12 @@ namespace CAX
 	class SizeTraits<T, types...>
 	{
 	public:
-		enum
-		{
-			max_value =
+		static const size_t max_value =
 			sizeof(T) > SizeTraits<types...>::max_value ?
-			sizeof(T) : SizeTraits<types...>::max_value,
-			min_value =
+			sizeof(T) : SizeTraits<types...>::max_value;
+		static const size_t min_value =
 			sizeof(T) < SizeTraits<types...>::min_value ?
-			sizeof(T) : SizeTraits<types...>::min_value
-		};
+			sizeof(T) : SizeTraits<types...>::min_value;
 	};
 
 	/* 终止特化 */
@@ -31,10 +30,8 @@ namespace CAX
 	class SizeTraits<T>
 	{
 	public:
-		enum {
-			max_value = sizeof(T),
-			min_value = sizeof(T)
-		};
+		static const size_t max_value = sizeof(T);
+		static const size_t min_value = sizeof(T);
 	};
 
 

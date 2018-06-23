@@ -6,6 +6,7 @@
 
 
 #include <cstddef>
+#include <cassert>
 
 namespace CAX
 {
@@ -100,7 +101,7 @@ namespace CAX
 			size_t iCurrentSlot = 1;
 			Slot pCurSlot = reinterpret_cast<Slot>(m_pCurrentBlock + 1);
 			void* pType = NULL;
-			while (iCurrentSlot <= m_blockSize)
+			while (iCurrentSlot < m_iCurrentInstance)
 			{
 				pType = reinterpret_cast<void*>(&(pCurSlot->type));
 				// Îö¹¹

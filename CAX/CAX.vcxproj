@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -116,38 +117,72 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arc2d.cpp" />
-    <ClCompile Include="BoundingBox2.cpp" />
+    <ClCompile Include="BoundingBox2d.cpp" />
+    <ClCompile Include="BoundingBox3d.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Chain2d.cpp" />
+    <ClCompile Include="Chain2dConnector.cpp" />
     <ClCompile Include="Circle2d.cpp" />
     <ClCompile Include="Constants.cpp" />
+    <ClCompile Include="Convex2d.cpp" />
     <ClCompile Include="CurveEntity.cpp" />
+    <ClCompile Include="DxfParser.cpp" />
+    <ClCompile Include="Ellipse2d.cpp" />
     <ClCompile Include="Entity2d.cpp" />
     <ClCompile Include="Entity3d.cpp" />
     <ClCompile Include="Line2d.cpp" />
     <ClCompile Include="LwPolyline2d.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Mat2.cpp" />
     <ClCompile Include="Mat4.cpp" />
     <ClCompile Include="MathTools.cpp" />
+    <ClCompile Include="NormalTriangle.cpp" />
+    <ClCompile Include="ObjParser.cpp" />
     <ClCompile Include="Point2d.cpp" />
     <ClCompile Include="Polyline2d.cpp" />
+    <ClCompile Include="Spline2d.cpp" />
+    <ClCompile Include="StlParser.cpp" />
+    <ClCompile Include="StringTools.cpp" />
+    <ClCompile Include="Surface3d.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Triangle2d.cpp" />
+    <ClCompile Include="TriangleSurface.cpp" />
     <ClCompile Include="Vec2.cpp" />
     <ClCompile Include="Vec3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arc2d.h" />
     <ClInclude Include="BoundingBox2d.h" />
+    <ClInclude Include="BoundingBox3d.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Chain2d.h" />
+    <ClInclude Include="Chain2dConnector.h" />
     <ClInclude Include="Circle2d.h" />
     <ClInclude Include="Constants.h" />
+    <ClInclude Include="Convex2d.h" />
     <ClInclude Include="CurveEntity.h" />
+    <ClInclude Include="DxfParser.h" />
+    <ClInclude Include="Ellipse2d.h" />
     <ClInclude Include="Entity2d.h" />
     <ClInclude Include="Entity3d.h" />
     <ClInclude Include="InstancePool.h" />
     <ClInclude Include="Line2d.h" />
     <ClInclude Include="LwPolyline2d.h" />
+    <ClInclude Include="Mat2.h" />
     <ClInclude Include="Mat4.h" />
     <ClInclude Include="MathTools.h" />
     <ClInclude Include="MultiInstancePool.h" />
+    <ClInclude Include="NormalTriangle.h" />
+    <ClInclude Include="ObjParser.h" />
     <ClInclude Include="Point2d.h" />
     <ClInclude Include="Polyline2d.h" />
+    <ClInclude Include="Spline2d.h" />
+    <ClInclude Include="StlParser.h" />
+    <ClInclude Include="StringTools.h" />
+    <ClInclude Include="Surface3d.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Triangle2d.h" />
+    <ClInclude Include="TriangleSurface.h" />
     <ClInclude Include="TypeTools.h" />
     <ClInclude Include="Vec2.h" />
     <ClInclude Include="Vec3.h" />

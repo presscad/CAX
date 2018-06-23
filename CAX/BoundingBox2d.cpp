@@ -52,6 +52,14 @@ namespace CAX
 		return *this;
 	}
 
+	Vec2d BoundingBox2d::center(void) const
+	{
+		return Vec2d(
+			0.5 * (minX + maxX),
+			0.5 * (minY + maxY)
+		);
+	}
+
 	bool BoundingBox2d::isValid(void) const
 	{
 		return (minX <= maxX) && (minY <= maxY);
@@ -88,7 +96,7 @@ namespace CAX
 	}
 
 
-	bool BoundingBox2d::intersect(const BoundingBox2d& boundingBox) const
+	bool BoundingBox2d::intersects(const BoundingBox2d& boundingBox) const
 	{
 		if ((minX < boundingBox.maxX) 
 			&& (maxX > boundingBox.minX) 

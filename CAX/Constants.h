@@ -22,22 +22,63 @@
 #define D_PI_ANGLE	180.0
 #endif
 
-/* 2*pi */
-#ifndef F_DOUBLE_PI
-#define F_DOUBLE_PI	6.2831853f
-#endif
-
-#ifndef D_DOUBLE_PI
-#define D_DOUBLE_PI	6.283185307179586
-#endif
-
-/* pi/2 */
-#ifndef F_HALF_PI
-#define F_HALF_PI	1.5707963f
+/* pi/6 */
+#ifndef F_PI_6
+#define F_PI_6	0.5235987f
 #endif 
 
-#ifndef D_HALF_PI
-#define D_HALF_PI	1.570796326794896
+#ifndef D_PI_6
+#define D_PI_6	0.523598775598298
+#endif 
+
+/* pi/4 */
+#ifndef F_PI_4
+#define F_PI_4	0.7853981f
+#endif 
+
+#ifndef D_PI_4
+#define D_PI_4	0.785398163397448
+#endif 
+
+/* pi/2 */
+#ifndef F_PI_2
+#define F_PI_2	1.5707963f
+#endif 
+
+/* pi*3/4 */
+#ifndef F_PIx3_4
+#define F_PIx3_4	2.3561944f
+#endif
+
+#ifndef D_PIx3_4
+#define D_PIx3_4	2.356194490192344
+#endif
+
+/* pi*3/2 */
+#ifndef F_PIx3_2
+#define F_PIx3_2	4.7123889f
+#endif
+
+#ifndef D_PIx3_2
+#define D_PIx3_2	4.712388980384689
+#endif
+
+/* pi*2 */
+#ifndef F_PIx2
+#define F_PIx2	6.2831853f
+#endif
+
+#ifndef D_PIx2
+#define D_PIx2	6.283185307179586
+#endif
+
+
+
+
+
+
+#ifndef D_PI_2
+#define D_PI_2	1.570796326794896
 #endif 
 
 /* 自然常数e */
@@ -91,9 +132,13 @@ namespace CAX {
 	public:
 		typedef float value_type;
 
+		static const value_type PI_6;
+		static const value_type PI_4;
+		static const value_type PI_2;
+		static const value_type PIx3_4;
 		static const value_type PI;
-		static const value_type DOUBLE_PI;
-		static const value_type HALF_PI;
+		static const value_type PIx3_2;
+		static const value_type PIx2;
 		static const value_type PI_ANGLE;
 		static const value_type E;
 		static const value_type MAX;
@@ -108,9 +153,13 @@ namespace CAX {
 	public:
 		typedef double value_type;
 
+		static const value_type PI_6;
+		static const value_type PI_4;
+		static const value_type PI_2;
+		static const value_type PIx3_4;
 		static const value_type PI;
-		static const value_type DOUBLE_PI;
-		static const value_type HALF_PI;
+		static const value_type PIx3_2;
+		static const value_type PIx2;
 		static const value_type PI_ANGLE;
 		static const value_type E;
 		static const value_type MAX;

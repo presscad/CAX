@@ -5,6 +5,7 @@
 
 
 #include "Constants.h"
+#include "MathTools.h"
 
 
 namespace CAX
@@ -372,6 +373,32 @@ namespace CAX
 		x = (fx * fcos) - (fy * fsin);
 		y = (fx * fsin) + (fy * fcos);
 	}
+
+
+	template<typename T>
+	T Vec2<T>::xRadian(void) const
+	{
+		return std::atan2(y, x);
+	}
+
+	template<typename T>
+	T Vec2<T>::yRadian(void) const
+	{
+		return std::atan2(-x, y);
+	}
+
+	template<typename T>
+	T Vec2<T>::xDegree(void) const
+	{
+		return toDegrees(xRadian());
+	}
+
+	template<typename T>
+	T Vec2<T>::yDegree(void) const
+	{
+		return toDegrees(yRadian());
+	}
+
 
 	template<typename T>
 	T Vec2<T>::getAngle(const Vec2<T>& v) const

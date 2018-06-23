@@ -2,9 +2,14 @@
 #include "stdio.h"
 #include "stdlib.h"
 
+#include "Entity2d.h"
 #include "Line2d.h"
 #include "MathTools.h"
 #include "Mat4.h"
+#include "DxfParser.h"
+#include "Chain2dConnector.h"
+#include "StlParser.h"
+#include "ObjParser.h"
 
 #include <cmath>
 
@@ -29,6 +34,34 @@ int main(void)
 	//printf("\n%lf\n", mat.determinant());
 
 	mat.transpose();
+
+	using namespace CAX;
+
+	Point2d *p = Entity2d::newPoint();
+	Line2d *pLine = Entity2d::newLine();
+
+	Arc2d* pArc = Entity2d::newArc();
+	Circle2d* pCircle = Entity2d::newCircle();
+
+
+	DxfParser parser;
+	parser.polylineToLines(true);
+	parser.lwPolylineToLineArcs(true);
+	bool ret = parser.parse("C:/Users/smallpi/Desktop/NCUtilTest/20160306/1.dxf");
+	Chain2dConnector connector;
+	connector.fromList(parser.entities());
+
+	BoundingBox2d box = connector.chains().front().boundingBox2d();
+
+
+	StlParser stlParser;
+	stlParser.parse("C:/Users/smallpi/Desktop/NCUtilTest/xichuang/fresadora_convencional.stl");
+
+	ObjParser objParser;
+	objParser.parse("C:/Users/smallpi/Desktop/NCUtilTest/cylinder_d100.obj");
+
+
+	printf("### %p ###\n", (&Vec3d::z));
 
 	system("pause");
 

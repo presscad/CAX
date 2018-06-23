@@ -5,6 +5,9 @@
 #define _ENTITY3D_H_
 
 
+#include "BoundingBox3d.h"
+
+
 namespace CAX
 {
 	class Entity3d
@@ -17,17 +20,18 @@ namespace CAX
 			Solid,		// 实体
 		};
 
-		/* 返回基础类型 */
-		BaseType baseType(void);
+		// 构造函数 和 析构函数
+		Entity3d();
+		virtual ~Entity3d();
 
-	protected:
-		Entity3d(BaseType baseType);
-		~Entity3d();
+		// 返回基础类型
+		virtual BaseType baseType(void) const = 0;
+		// 获取包围盒
+		virtual BoundingBox3d boundingBox3d(void) const = 0;
 
 
 	private:
 
-		const BaseType m_baseType;
 	};
 
 } // namespace CAX

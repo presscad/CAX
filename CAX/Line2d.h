@@ -16,14 +16,23 @@ namespace CAX
 		Line2d();
 		Line2d(const double startx, const double starty, const double endx, const double endy);
 		Line2d(const Vec2d& start, const Vec2d& end);
-		~Line2d();
-
-		/* @override 判断是否封闭 */
-		bool isClosed(void);
-
-		/* @override 获取起点和终点 */
-		Vec2d head(void);
-		Vec2d tail(void);
+		virtual ~Line2d();
+	
+		// {{ override }} 
+		// 返回二维图形的类型 
+		virtual Type type(void) const;
+		// 判断是否封闭
+		bool isClosed(void) const;
+		// 获取起点和终点
+		Vec2d head(void) const;
+		Vec2d tail(void) const;
+		// 获取包围盒
+		virtual BoundingBox2d boundingBox2d(void) const;
+		virtual BoundingBox3d boundingBox3d(void) const;
+		// 反向
+		virtual void reverse(void);
+		// 获取长度
+		virtual double length(void) const;
 
 		/* 获取起点和终点 */
 		Vec2d& start(void);

@@ -133,9 +133,60 @@ namespace CAX {
 
 
 
+
+	// int 的特化
+	template<>
+	class Vec3<int>
+	{
+		typedef int value_type;
+
+		// {{ 构造函数 和 析构函数 }}
+		Vec3(void);
+		~Vec3(void);
+
+		// {{ 属性 }}
+		int x;
+		int y;
+		int z;
+
+
+		// {{ 运算符重载 }}
+		//void
+	};
+
+
+
+
+	// unsigned int 的特化
+	template<>
+	class Vec3<unsigned int>
+	{
+	public:
+		typedef unsigned int value_type;
+
+		// {{ 构造函数 和 析构函数 }}
+		Vec3(void);
+		~Vec3(void);
+
+		// {{ 属性 }}
+		unsigned int x;
+		unsigned int y;
+		unsigned int z;
+
+		// {{ 运算符重载 }}
+		Vec3<unsigned int>& operator -= (unsigned int value);
+	};
+
+
+
+
+
+
+
+
 	typedef Vec3<float> Vec3f;
 	typedef Vec3<double> Vec3d;
-
+	typedef Vec3<unsigned int> Vec3u;
 
 
 }; // namespace CAX

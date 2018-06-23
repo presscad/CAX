@@ -57,10 +57,61 @@
     <ClCompile Include="Circle2d.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="BoundingBox2.cpp">
+    <ClCompile Include="Mat4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Mat4.cpp">
+    <ClCompile Include="DxfParser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StringTools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Ellipse2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox3d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Chain2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Chain2dConnector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Surface3d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StlParser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalTriangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjParser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleSurface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Spline2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Mat2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle2d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Convex2d.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -113,10 +164,61 @@
     <ClInclude Include="Circle2d.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Mat4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DxfParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StringTools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Ellipse2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingBox3d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="BoundingBox2d.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Mat4.h">
+    <ClInclude Include="Chain2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Chain2dConnector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Surface3d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StlParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalTriangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TriangleSurface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Spline2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Mat2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Convex2d.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

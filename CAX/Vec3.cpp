@@ -524,8 +524,59 @@ namespace CAX
 
 
 
+
+
+
+	Vec3<int>::Vec3(void)
+	{
+
+	}
+
+
+	Vec3<int>::~Vec3(void)
+	{
+
+	}
+
+
+
+
+
+
+	Vec3<unsigned int>::Vec3(void)
+	{
+		
+	}
+
+
+	Vec3<unsigned int>::~Vec3(void)
+	{
+
+	}
+
+	Vec3<unsigned int>& Vec3<unsigned int>::operator -= (unsigned int value)
+	{
+		x -= value;
+		y -= value;
+		z -= value;
+		return *this;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//ÏÔÊ¾ÊµÀý»¯
 	template class Vec3<float>;
 	template class Vec3<double>;
+	template class Vec3<unsigned int>;
 }
 
